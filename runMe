@@ -1,0 +1,13 @@
+#!/bin/csh -f
+
+foreach i ( *.ipynb )
+  ipython nbconvert $i
+end
+
+foreach i ( *.html )
+  sed < $i 's/ipynb/html/' > tmp ; mv tmp $i
+end
+
+git add --all *
+git commit -m "note coordination"
+git push origin master

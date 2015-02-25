@@ -1680,7 +1680,28 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="2.0-Urban-Model">2.0 Urban Model<a class="anchor-link" href="#2.0-Urban-Model">&#182;</a></h1>
+<div class="figure">
+<img src="images/ucl_logo.png" />
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>[<a href="WriteUp.html#5.0-Project-Write-up">Next</a>] [<a href="CW-1-Pearl-River-Intro.ipynb#Geog-2021-Coursework">Home</a>] [<a href="Download.ipynb#3.-Download-data">Prev</a>]</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="4.0-Urban-Model">4.0 Urban Model<a class="anchor-link" href="#4.0-Urban-Model">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -1690,25 +1711,29 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="introduction">2.1 Introduction</h2>
+<h2 id="introduction">4.1 Introduction</h2>
 <p>In this section, you will learn how to apply the land use change model(s) using one of two methods.</p>
-<h2 id="the-models">2.2 The Models</h2>
+<h2 id="the-models">4.2 The Models</h2>
 <p>Equations from Seto et al. have already been presented to you:</p>
 <div class="figure">
 <img src="images/natural2urban.png" />
+
 </div>
 <div class="figure">
 <img src="images/ag2urban.png" />
+
 </div>
 <p>There are two parts in the original growth model, the first being modeling the urban land transformed from natural vegetation (“Nat-Urban model” hereafter), and the second being urban land transformed from agricultural land (“Agr-Urban model” hereafter).</p>
 <p>Ideally, you should calibrate and test both of these models.</p>
 <p>It is acceptable however to simplify this process, and calculate only thesufficient total amount of urban area gained in each time period, and a combined model:</p>
 <div class="figure">
 <img src="images/comp.png" />
+
 </div>
 <p>In these models, we assume that changes are driven by five factors: per capita investment, per capita agricultural output, wages in private sectors, average wages, and per unit productivity of land. The per unit productivity of land,</p>
 <div class="figure">
 <img src="images/eq.png" />
+
 </div>
 <p>takes into account the agricultural and urban land area from the previous time step. This model assumes the amount of land changed into urban built area is a linear combination of these five factors, and we have collected or calculated data for these factors by now. What we don’t know yet is how much each factor contributes in the model, or, in another word, the coefficient of each factor (i.e. α, β1, β2, β3, β4 and β5). In order to build this model for the use of future prediction, we need to figure out the best value of the coefficients. This is essentially a model “inversion” problem. We can call these 'factors' parameters, in that they are the parameters (at present unknown) of a multi-linear model.</p>
 </div>
@@ -1719,7 +1744,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="gathering-socio-economic-data">2.3 Gathering socio-economic data</h2>
+<h2 id="gathering-socio-economic-data">4.3 Gathering socio-economic data</h2>
 </div>
 </div>
 </div>
@@ -1731,6 +1756,7 @@ div#notebook {
 <p>There are many freely available online database for downloading important socio-economic data. Some examples are the Center for International Earth Science Information Network (CIESIN) at Columbia University and the World Bank. The data we will be using here are from the <a href="http://www.gdstats.gov.cn/tjnj/2006/ml_e.htm">Guangdong Statistical Yearbook</a>.</p>
 <div class="figure">
 <img src="images/page.png" />
+
 </div>
 <p>A spreadsheet with relevant data has been compiled and can be downloaded <a href="UrbanGrowthModel_Students.xlsx">here</a>.</p>
 <p>Note that the classification results in the spreadsheet are the lecturers' results and <strong>must not</strong> be used in student analyses (i.e. you must put in your own classification results).</p>
@@ -1743,11 +1769,20 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.4-Applying-the-models">2.4 Applying the models<a class="anchor-link" href="#2.4-Applying-the-models">&#182;</a></h2>
+<h2 id="4.4-Applying-the-models">4.4 Applying the models<a class="anchor-link" href="#4.4-Applying-the-models">&#182;</a></h2>
 </div>
 </div>
 </div>
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Since the data are presented in a spreadsheet, you <em>should</em> be able to use your existing (spreadsheet) skills to apply this multi-linear model. It is sufficient for you to do that (along with some form of accuracy assessment). As an alternative, we provide some codes below that might make the modelling easier.</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">
@@ -2212,7 +2247,7 @@ AAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="2.5-Further-Work">2.5 Further Work<a class="anchor-link" href="#2.5-Further-Work">&#182;</a></h2>
+<h2 id="4.5-Further-Work">4.5 Further Work<a class="anchor-link" href="#4.5-Further-Work">&#182;</a></h2>
 </div>
 </div>
 </div>
@@ -2231,6 +2266,15 @@ AAAAAElFTkSuQmCC
 <li>etc.</li>
 </ul>
 <p>If you are worried that a particular aspect you are thinking of following as an 'extra' might not be useful, ask the course tutor.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>[<a href="WriteUp.html#5.0-Project-Write-up">Next</a>] [<a href="CW-1-Pearl-River-Intro.ipynb#Geog-2021-Coursework">Home</a>] [<a href="#4.0-Urban-Model">Top</a>] [<a href="Download.ipynb#3.-Download-data">Prev</a>]</p>
 </div>
 </div>
 </div>
