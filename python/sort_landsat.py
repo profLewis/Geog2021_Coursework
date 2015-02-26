@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 
 import gdal # Import GDAL library bindings
 import os
