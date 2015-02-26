@@ -117,3 +117,34 @@ Now, you can subset the data:
 ofiles = sort_landsat(files)
 ```
 
+which will produce the extracted files you need. You can now quite `ipython` (^D and confirm `y`).
+
+You should see that the python codes have generated two files `LT51220441995364CLT00_mask.tif` and `LT51220441995364CLT00_refl.tif`:
+
+```
+bash% ls -l *tif
+-rw-rw-r--. 1 plewis plewis 10768420 Feb 26 10:32 LT51220441995364CLT00_mask.tif
+-rw-rw-r--. 1 plewis plewis 42996634 Feb 26 10:31 LT51220441995364CLT00_refl.tif
+```
+
+### Running ipython notebooks to use the notes for Geog 2021
+
+In many ways a better approach is to use the ipython notebooks:
+
+
+```
+bash% mkdir -p ~/DATA/where_I_put_the_notes
+bash% cd ~/DATA/where_I_put_the_notes/Geog2021_Coursework
+```
+
+Then start a browser (e.g. firefox, safari etc) and start an  [`ipython notebook`] session:
+
+`bash% ipython notebook`
+
+This should open a page in your browser, e.g. `http://localhost:8889/tree`
+
+If you then e.g. click on the link [`Download.ipynb`](http://localhost:8889/notebooks/Download.ipynb), this should run the notebook in a new tab in the browser.
+
+You can now go through the notes, and run (and/or edit) the python codes as they appear on the page.
+
+The various images, text etc. are in 'cells' on the web page. To 'run' a cell select the cursor in that cell and then either do `Shift Return` (i.e. Shift and Return keys at the same time), or click the 'play' button.
