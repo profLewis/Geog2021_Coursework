@@ -90,7 +90,6 @@ Then, uncompress this file with:
 
 The variable `files` then contains a list of the files:
 
-`print files`
 
 ```
 print files
@@ -112,5 +111,9 @@ print files
       dtype='|S61')]
 ```
 
+Now, you can subset the data:
 
+```
+ofiles = sort_landsat(files)
+```
 
