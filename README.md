@@ -18,7 +18,9 @@ or by downloading the [course notes as a zip file](https://github.com/profLewis/
 If you use `git`, you can apply any updates to the notes:
 
 `bash% cd where_I_put_the_notes/Geog2021_Coursework`
+
 `bash% git reset --hard HEAD`
+
 `bash% git pull`
 
 You can also fork the notes and create your own version.
