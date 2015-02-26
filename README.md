@@ -1,5 +1,32 @@
 # Geog2021_Coursework
 
+See below for notes on how to use these notes, or jump to the course pages
+
+## Course Pages
+
+### Introduction
+* [Go to practical Introduction (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.ipynb)
+* [Go to practical Introduction (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.html)
+
+### Download
+* [Go to Download page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/Download.ipynb)
+* [Go to Download page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/Download.html)
+
+
+### Classification
+* [Go to Classification page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.ipynb)
+* [Go to Classification page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.html)
+
+
+### Modelling
+* [Go to Modelling page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.ipynb)
+* [Go to Modelling page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.html)
+
+
+### Write Up
+* [Go to Write Up page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/WriteUp.ipynb)
+* [Go to Write Up page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/WriteUp.html)
+
 ## Coursework notes for Geog 2021
 
 ### Accessing a test dataset
