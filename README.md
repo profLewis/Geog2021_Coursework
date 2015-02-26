@@ -70,7 +70,7 @@ Then start an [`ipython`] session:
 Then, for example, folling the code in the [`Download`](http://www2.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/Download.html) section, type or paste the following at the ipython prompt (`In [1]:`):
 
 ```
-import sys`
+import sys
 sys.path.insert(0,'python')
 from uncompress_ls import uncompress_ls
 from sort_landsat import sort_landsat
