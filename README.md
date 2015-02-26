@@ -8,10 +8,10 @@ Whilst you will need to order and download the data yourselves in this practical
 
 You should make a directory to work in, e.g.:
 
-`bash% mkdir -p ~/DATA/where_I_put_the_notes`
-
-`bash% cd ~/DATA/where_I_put_the_notes`
-
+```
+bash% mkdir -p ~/DATA/where_I_put_the_notes
+bash% cd ~/DATA/where_I_put_the_notes
+```
 
 Then, download (selecting from menu) the test data file [`LT51220441995364-SC20150217103827.tar.gz`](http://www2.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/LT51220441995364-SC20150217103827.tar.gz), or do one of the following:
 
@@ -30,23 +30,22 @@ These coursenotes are available as web pages (html) from the [Geog 2021 course o
 
 The notes are also available on [github](https://github.com/profLewis/Geog2021_Coursework). You can directly download the notes from [github](https://github.com/profLewis/Geog2021_Coursework), either using some [`git`](http://en.wikipedia.org/wiki/Git_(software)) software, e.g:
 
-`bash% mkdir -p ~/DATA/where_I_put_the_notes`
-
-`bash% cd ~/DATA/where_I_put_the_notes`
-
-`bash% git clone https://github.com/profLewis/Geog2021_Coursework.git`
+```
+bash% mkdir -p ~/DATA/where_I_put_the_notes
+bash% cd ~/DATA/where_I_put_the_notes
+bash% git clone https://github.com/profLewis/Geog2021_Coursework.git
+```
 
 or by downloading the [course notes as a zip file](https://github.com/profLewis/Geog2021_Coursework/archive/master.zip).
 
 If you use `git`, you can apply any updates to the notes:
 
-`bash% mkdir -p ~/DATA/where_I_put_the_notes`
-
-`bash% cd ~/DATA/where_I_put_the_notes/Geog2021_Coursework`
-
-`bash% git reset --hard HEAD`
-
-`bash% git pull`
+```
+bash% mkdir -p ~/DATA/where_I_put_the_notes
+bash% cd ~/DATA/where_I_put_the_notes/Geog2021_Coursework
+bash% git reset --hard HEAD
+bash% git pull
+```
 
 You can also fork the notes and create your own version.
 
@@ -58,9 +57,10 @@ You can of course just read and digest the html notes, but you will find that th
 
 Assuming you are on a unix system (including OS X, linux etc.), then first change directory to where the notes are:
 
-`bash% mkdir -p ~/DATA/where_I_put_the_notes`
-
-`bash% cd ~/DATA/where_I_put_the_notes/Geog2021_Coursework`
+```
+bash% mkdir -p ~/DATA/where_I_put_the_notes
+bash% cd ~/DATA/where_I_put_the_notes/Geog2021_Coursework
+```
 
 Then start an [`ipython`] session:
 
@@ -69,13 +69,12 @@ Then start an [`ipython`] session:
 
 Then, for example, folling the code in the [`Download`](http://www2.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/Download.html) section, type or paste the following at the ipython prompt (`In [1]:`):
 
-`import sys`
-
-`sys.path.insert(0,'python')`
-
-`from uncompress_ls import uncompress_ls`
-
-`from sort_landsat import sort_landsat`
+```
+import sys`
+sys.path.insert(0,'python')
+from uncompress_ls import uncompress_ls
+from sort_landsat import sort_landsat
+```
 
 This will load some python codes from the local `python` directory that you can use.
 
@@ -94,7 +93,7 @@ The variable `files` then contains a list of the files:
 `print files`
 
 ```
-In [8]: print files
+print files
 [array(['/tmp/tmp0ImQHU/LT51220441995364CLT00_cfmask.tif',
        '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_adjacent_cloud_qa.tif',
        '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_atmos_opacity.tif',
