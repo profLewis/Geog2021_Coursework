@@ -19,7 +19,7 @@ Then, download (selecting from menu) the test data file [`LT51220441995364-SC201
 
 or, if you are on the UCL Geography system, you can simply copy the file:
 
-`bash `cp ~plewis/p/Geog2021_Coursework/LT51220441995364-SC20150217103827.tar.gz ~/DATA/where_I_put_the_notes`
+`bash% cp ~plewis/p/Geog2021_Coursework/LT51220441995364-SC20150217103827.tar.gz ~/DATA/where_I_put_the_notes`
 
 
 ### Accessing the notes via a web page
@@ -92,6 +92,26 @@ Then, uncompress this file with:
 The variable `files` then contains a list of the files:
 
 `print files`
+
+```
+In [8]: print files
+[array(['/tmp/tmp0ImQHU/LT51220441995364CLT00_cfmask.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_adjacent_cloud_qa.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_atmos_opacity.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_band1.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_band2.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_band3.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_band4.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_band5.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_band7.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_cloud_qa.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_cloud_shadow_qa.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_ddv_qa.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_fill_qa.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_land_water_qa.tif',
+       '/tmp/tmp0ImQHU/LT51220441995364CLT00_sr_snow_qa.tif'], 
+      dtype='|S61')]
+```
 
 
 
