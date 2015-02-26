@@ -5,27 +5,27 @@ See below for notes on how to use these notes, or jump to the course pages
 ## Course Pages
 
 ### Introduction
-* [Go to practical Introduction (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.ipynb)
-* [Go to practical Introduction (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.html)
+* [Go to practical Introduction (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.ipynb)
+* [Go to practical Introduction (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/CW-1-Pearl-River-Intro.html)
 
 ### Download
-* [Go to Download page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/Download.ipynb)
-* [Go to Download page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/Download.html)
+* [Go to Download page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/Download.ipynb)
+* [Go to Download page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/Download.html)
 
 
 ### Classification
-* [Go to Classification page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.ipynb)
-* [Go to Classification page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.html)
+* [Go to Classification page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.ipynb)
+* [Go to Classification page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/CW-1-PearlRiver-Class.html)
 
 
 ### Modelling
-* [Go to Modelling page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.ipynb)
-* [Go to Modelling page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.html)
+* [Go to Modelling page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.ipynb)
+* [Go to Modelling page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/2021_UrbanModel.html)
 
 
 ### Write Up
-* [Go to Write Up page (python notebook)](https://github.com/profLewis/Geog2021_Coursework/blob/master/WriteUp.ipynb)
-* [Go to Write Up page (html)](https://github.com/profLewis/Geog2021_Coursework/blob/master/WriteUp.html)
+* [Go to Write Up page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/WriteUp.ipynb)
+* [Go to Write Up page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/WriteUp.html)
 
 ## Coursework notes for Geog 2021
 
