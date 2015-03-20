@@ -1,0 +1,7 @@
+First, note that you do not need to go beyond the range of the years given to you in the socio-economic data spreadsheet (1987-2000).
+
+However, if you do want to explore further years, the following note from Dr Qingling Wu provides advice on this:
+
+"Links formatted like http://www.gdstats.gov.cn/tjnj/2008/ml_e.htm can be used for any year between 2006 and 2011 (inclusive). Since 2012, the yearbook became bilingual, and (like it was before) a number of key variables include data not only from one year but also from all previous years since 1978. The newest yearbook was made in 2014, and its data can be accessed from http://www.gdstats.gov.cn/tjnj/2014/directory.html. They even created an Excel download button at the top of each page: http://www.gdstats.gov.cn/tjnj/2014/directory/content.html?02-01."
+
+A small caveat: If you are considering using Landsat 7 data, you should first read about the issues with the sensor from 2003+ (http://landsat.usgs.gov/products_slcoffbackground.php). This does not mean that the data are unuseable, but it does mean you may need to find a work-around for the SLC-off issue.
