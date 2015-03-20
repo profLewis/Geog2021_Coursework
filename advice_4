@@ -1,0 +1,45 @@
+In response to the following question from a student:
+
+I’m currently working through the modelling of the classified areas. Comparing the model that is in the spreadsheet to the model given by Seto et al, there seems to be an additional coefficient (b4) in the spreadsheet model that is not found in Seto et al’s model.
+ 
+I’m not fully sure what this coefficient does, and was wondering if you could explain it’s significance, as it seems to scale the productivity ratio, but the Seto equation does not require this.
+My response that you may find of value:
+
+Hi - I'll check tomorrow, but from what I remember, the one you've got in the notes/spreadsheet is a combination of 2 models. So long as you put your data into at least one such model (it can be directly from seto or something similar like this) and obtain an estimate of the model parameters (the coefficients) then that is ok for a pass on that section. You can go further, eg trying /comparing a few different models if you wanted -- you might then need to think about how to compare models of different 'complexities' ( degrees of freedom here),but I'm not expecting you to know much about such things, but there are metrics of such things (information criteria, if you are interested, eg akaiki information criteria (AIC)).
+ 
+In essence, if the goodness of fit of the model is 'pretty much the same' (it *will* go up, but 'same' here means it doesn't go up 'much', where 'much' can be defined in a statistical measure) when you get rid of one or more of the inputs (ie have a lower degree of freedom model), then that is a 'better' model.
+ 
+One other thing you should consider in modelling is the uncertainty (or at least the relative uncertainty) on the independent (and dependent) variable -- change in area of urban (and the socio-economic inputs) might not all be equally accurate - your accuracy assessment of the classifications should come in handy in thinking about that. Also consider that the accuracy assessment you have done doesn't *directly* tell you the accuracy of *change* in urban area (although that can be estimated under certain assumptions).
+ 
+And further response wrt http://www2.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/2021_UrbanModel.html
+ 
+The models on the course web page (from Seto et al.) consider land cover change from:
+ 
+natural to urban: a + b1 (inv/pop) + b2 log(wages) + b3 (relative ag output)   [eqn 1]
+ 
+ag to urban:  a + b1 (ag output/pop) + b2 (invest/pop) + b3 log(wages) + b4 (relative ag output)  [eqn 2]
+ 
+although the b4 is missing in the equation (or rather, assumed 1, for no apparent reason -- typo?)
+ 
+The urban growth model you are given is:
+ 
+change in urban area = a + b1 (invest/pop) + b2 (ag output/pop) + b3 log(private wages) + b4 log(total wages) + b5  (relative ag output)  [eqn 3]
+ 
+The model spreadsheet is on:
+http://www2.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/files/UrbanGrowthModel_Students-3.xlsx
+ 
+Columns E to L (8 columns) contains the data on e.g. investments, population etc.
+So, to get e.g. investments / population, you would need to divide the investments column by the population. You should be able to use the other data columns similarly to derive the dependent variables you need for the model.
+ 
+You are expected to put in your own data for measured growth, and then to calculate the coefficients of the multi-linear regression model  [eqn 3 above] and assess the mismatch between model and data. 
+ 
+As noted above, you can also try to build a model with fewer coefficients and explore the issues around that, but that is not part of the core requirement. You could also e.g. build the natural to urban and agriculture to urban models separately if you like, but again that is not a core requirement. 
+ 
+Make sure that all choices you make (on what you do, what data you include, how you go about doing things) are clearly justified in the text (e.g. with an image & cloud stats of the 'best' cloudy scene for year X to illustrate a justification that there was no useful data for that year).
+ 
+I hope this clarifies things.
+Happy to respond to further questions.
+ 
+ps -- don't forget to fill out the course feedback.
+ 
+Lewis
