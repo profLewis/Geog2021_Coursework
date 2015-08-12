@@ -5,6 +5,29 @@ import os
 import sys
 sys.path.insert(0,'python')
 from gdal_merge import main as gdal_merge
+from spectral import *
+import spectral.io.envi as envi
+
+def tiff2envi(ofile):
+
+  # loop over _refl and _mask file
+  for o in [ofile + '_refl.tif',ofile + '_mask.tif']:
+    # open tiff file
+    dataset = gdal.Open(o, GA_ReadOnly)
+    # read the tiff data
+    data = dataset.ReadAsArray()
+
+    # set up metadata for envi file
+
+    md = {'lines': dataset.RasterYSize,
+          'samples': dataset.RasterXSize,
+          'bands': dataset.RasterCount}
+    # save envi file
+
+    envi.save_image(o.replace('tif','hdr'),data,metadata=md,\
+                        dtype='float32',interleave='bip',force=True)
+
+
 
 def rm(x):
     for f in x:
@@ -66,7 +89,12 @@ def sort_landsat(files):
         cmd = "python/gdal_calc.py -A " + ofile1 + \
               ' --outfile=' + ofile3 + ' --calc="~((A == 1) + (A == 0))"'
         os.system(cmd)
+        
+        # convert to envi
+        tiff2envi(ofile)
+        
         # tidy up
+        rm([ofile2,ofile3])
         rm([ofile,ofile1])
         rm(nbfiles)
         ofiles.append([ofile2,ofile3])
