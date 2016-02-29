@@ -5,22 +5,22 @@ See below for notes on how to use these notes, or jump to the course pages
 ## Course Pages
 
 ### Introduction
-* [Go to practical Introduction (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.ipynb)
+* [Practical Introduction](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.ipynb)
 
 ### Download
-* [Go to Download page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/Download.ipynb)
+* [Download page](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/Download.ipynb)
 
 
 ### Classification
-* [Go to Classification page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.ipynb)
+* [Classification page](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.ipynb)
 
 
 ### Modelling
-* [Go to Modelling page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.ipynb)
+* [Modelling page](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.ipynb)
 
 
 ### Write Up
-* [Go to Write Up page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/WriteUp.ipynb)
+* [Write Up page](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/WriteUp.ipynb)
 
 ## Coursework notes for Geog 2021
 
