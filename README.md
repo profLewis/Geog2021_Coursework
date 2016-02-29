@@ -6,26 +6,21 @@ See below for notes on how to use these notes, or jump to the course pages
 
 ### Introduction
 * [Go to practical Introduction (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.ipynb)
-* [Go to practical Introduction (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/CW-1-Pearl-River-Intro.html)
 
 ### Download
 * [Go to Download page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/Download.ipynb)
-* [Go to Download page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/Download.html)
 
 
 ### Classification
 * [Go to Classification page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-PearlRiver-Class.ipynb)
-* [Go to Classification page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/CW-1-PearlRiver-Class.html)
 
 
 ### Modelling
 * [Go to Modelling page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/2021_UrbanModel.ipynb)
-* [Go to Modelling page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/2021_UrbanModel.html)
 
 
 ### Write Up
 * [Go to Write Up page (python notebook)](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/WriteUp.ipynb)
-* [Go to Write Up page (html)](http://www.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/WriteUp.html)
 
 ## Coursework notes for Geog 2021
 
@@ -51,7 +46,7 @@ or, if you are on the UCL Geography system, you can simply copy the file:
 
 ### Accessing the notes via a web page
 
-These coursenotes are available as web pages (html) from the [Geog 2021 course overview page](http://www2.geog.ucl.ac.uk/~plewis/geog2021) or more directly from the [practical introduction page](http://www2.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/CW-1-Pearl-River-Intro.html).
+These coursenotes are available as web pages (html) from the [Geog 2021 course overview page](http://www2.geog.ucl.ac.uk/~plewis/geog2021) or more directly from the [practical introduction page](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/CW-1-Pearl-River-Intro.ipynb).
 
 ### Accessing the notes via github
 
