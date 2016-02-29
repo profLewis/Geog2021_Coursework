@@ -22,6 +22,10 @@ See below for notes on how to use these notes, or jump to the course pages
 ### Write Up
 * [Write Up page](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/WriteUp.ipynb)
 
+### Project Advice
+* [Project FAQ](http://nbviewer.ipython.org/github/profLewis/Geog2021_Coursework/blob/master/Project-Advice.ipynb)
+* 
+
 ## Coursework notes for Geog 2021
 
 ### Accessing a test dataset
