@@ -1,0 +1,69 @@
+Project Advice
+
+Selecting Landsat scenes
+
+Hi all --
+
+ 
+
+I've received a couple of questions about the Landsat scene selection for the project.
+
+First, I would like to stress that whilst this task is, in some ways, 'packaged', I have tried to make it (the task) and the issues that you will find in completing it as close to what you would likely find if you tried to do any monitoring of this sort with Landsat data (or other EO). 
+
+So, discovering 'issues' that arise when looking for data is part of the learning process you need to go through. At the same time, if you are completely stumped on such issues, then I am happy to provide 'pointers' as to what you might consider.
+
+If you consider the project as stated as a typical research project, we have the main purpose of the exercise being to describe land cover (urban land use) change in this part of China as a function of socio-economic factors. Hopefully, if you read the papers on this, you will understand the context for wanting to know such things. As an empirical model, this is not going to directly provide you with the *causes* of urbanisation, but it will at least elucidate the strength of certain factors in describing it.
+
+To do the task, you need socio-economic data (for the model). I have only given you data for 1987 to 2000 inclusive (14 years)
+
+You will notice that you need to calculate *growth* in urban area, i.e. change, so with 14 values of urban area, you can get 13 values of change (or ... with 15 values, you can get 14 ...). This means that you need to concentrate your data acquisition on those years.
+
+Several students have told me that they cannot find appropriate datasets for some of the years. This is a useful observation, but one which you will encounter in reality (i.e. every time you do something of this sort), so you need to think through the options and do something appropriate. Remember, this is deliberately *not* set up as a recipe book for you ... we are trying to get to to learn how to do this sort of work, so expect to encounter problems and have to come up with possible solutions.
+
+ 
+
+As a starter on this topic though ... 
+
+(i) Data Gaps
+
+==========
+
+If you had gaps in your data for land cover, you could still run the model (and complete the practical), but in some cases, change would be calculated over several years (rather than per year). In that case, remember to take into account the varying gaps in the data when you calculate change per year (e.g. if you have data for 1996 and 2000, then clearly,
+
+change per year = [urban(2000)-urban(1996)]/(2000-1996)
+
+This is not an unreasonable approach to the problem, and if explained well (demonstrate that all data available for the missing years are of no value) would most likely be *sufficient*, but it has the problem that you will have fewer samples for your model (also harder to do any uncertainty analysis), and is really the 'easiest way out', so you are unlikely to get a 1st class mark for that. That said, you *could* choose to do this.
+
+*If there happened to be* a longer time series of socio-economic data available, then that would go some way towards mitigating the issues above, i.e. if we had socio-economic data for 1987-2010 for example, you would have greater choice of scenes, and this approach would be much more sensible as a piece of science.
+
+Another occasion when this might be a good option would be if the change between year X1 and and X2, even though spaced more than one year apart, showed little actual change (compared to that you see in the rest of the dataset). I am *not* saying that this is the case here, but if you found yourself in that situation, this simple approach would be quite justified.
+
+ 
+
+(ii) time of year
+
+============
+
+I have suggested that you initially limit your search for scenes to approximately the same time of year. You should be able to think through and discuss the reasons why that might be the 'best' thing to do. However, if it is not possible, you may have to relax those constraints (i.e. take datasets *not* at the same time of year).
+
+The *best* way to deal with that then might be to consider the series of all datasets as a sample of a continuous function of reflectance that relates to land cover (see e.g. W.B. Cohen, Y. Zhiqiang, R.E. Kenned, Detecting trends in forest disturbance and recovery using yearly Landsat time series: 2. TimeSync — Tools for calibration and validation, Remote Sensing of Environment, 114 (2010), pp. 2911–2924). This would mean that you could make use of any dataset that had a cloud-free *pixel* over the area of interest, which is rather a different proposition to simply looking for 'clear' scenes. This is probably the most appropriate method for the analysis of long-term datasets such as landsat, but as it would require tools and techniques you have not been introduced to, it is probably not feasible for you to do in this work. That said, you would still be best advised to make yourself aware of 'recent' trends in processing time series of landsat data that you might consider for the future.
+
+Assuming instead that you continue searching for only 'clear' scenes, and that you have to extend the range of months you look through, you might just consider this as an additional source of uncertainty on the inputs.
+
+(iii) just use what you can and deal with 'holes'
+
+===================================
+
+Another approach that could be reasonable is if you found a set of 'good', reasonably clear scenes that had some cloud cover over the area you are interest in, you could still do a classification on this and make use of the data in the model. The problem then would be that there are 'holes' in your dataset. There are several ways you could think of to get around this, e.g. make some assumption about the land cover in the 'holes' to fill out the area (e.g. its a weighted average of the last time you did get a view of the surface and the next time), or, if the holes were pretty much always in the same place, just mask that area out of all analyses.
+
+ 
+
+I think it would be reasonable to follow any of these routes. The 'full time series' approach of Cohen et al. is perhaps the most complex, and I am assuming this is probably out of scope for most, if not all of you (though if you wanted to have a go, I could provide further pointers ...). The simple basic approach (i) is ok, certainly as a first pass through the processing, but ultimately rather limited (particularly in the number of samples you have). So, you could try that first. Extending the months you look over is certainly an option to consider and perhaps try, but comes with its own issues. The 'dealing with holes' route is also worth thinking about.
+
+To re-iterate then, there are many viable options for dealing with this first issue you have been finding. There *is* a good solution (track all valid pixels from all scenes) but that takes you away somewhat from the techniques we have taught you and so is probably beyond the scope of this practical. There are several 'ok' solutions that you could try.
+
+ 
+
+One last thing -- before I get around to correcting the few broken links in the notes, the sock-econic data is available to you in a spreadsheet from http://www2.geog.ucl.ac.uk/~plewis/Geog2021_Coursework/files/UrbanGrowthModel_Students.xlsx
+
+ 

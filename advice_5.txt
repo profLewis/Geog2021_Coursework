@@ -1,0 +1,18 @@
+
+> I have been looking at the modelling of the classified areas.  I realise the formula is the urban growth formula from your notes.  However, when looking closely at the formula I understand that the log for the wages in private units(b3) and average total wages (b4) are not including in the formula.  Are these values already calculated to their logarithmic value or should we add this to the formula when applying our own data?
+ 
+The titles in the spreadsheet say e.g. 'average total wages (yuan)' ... since the formula ('model') you are using states the variable as log(average total wages), then you *should* apply a log transform.
+ 
+> Also, I am a bit confused with the modelling with the parameters a b1 b2 b3 b4 b5 do we use trial and error to find the values that fit in our model or do we have to calculate these values?
+ 
+No -- you should not use trial and error. The equation is simply a multi-variate linear regression model. You are supposed to have learned how to solve for the parameters of that in your first year, which is why I give not explicit instructions here.
+ 
+To better understand this, imagine that your model had only 1 input variable (e.g. population). In that case, the model would be:
+ 
+urban_change = a + b population
+ 
+and if you plotted urban_change as a function of population, this model would be assuming that there is s straight line describing this. In that case, you can interpret the 'parameter' a as the 'intercept' and the parameter 'b' as the slope (of the line). To estimate these from data, you would not guess the values, you would perform a linear regression. The same idea holds in this practical, but it is a multi-variate linear relationship.
+ 
+I hope that helps
+ 
+Lewis
