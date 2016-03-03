@@ -14,8 +14,11 @@ import ogr, os, osr
 import numpy as np
 
 
-def uncompress_ls(dirname):
+def uncompress_ls(dirname,temp_dir=None):
   filelist = []
+  if temp_dir:
+    if not os.path.exists(temp_dir):
+      os.makedirs(temp_dir)
 
   for tar_name in glob(dirname):
     print tar_name
@@ -29,7 +32,7 @@ def uncompress_ls(dirname):
         os.mkdir(extraction_dir)
     except:
         pass
-    temp_dir = tempfile.mkdtemp()
+    temp_dir = temp_dir or tempfile.mkdtemp()
     with tarfile.open(tar_path, 'r') as tar_file:
         thisDict = {}
         tar_file.extractall(temp_dir)
