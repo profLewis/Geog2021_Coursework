@@ -3,8 +3,10 @@
 import gdal # Import GDAL library bindings
 import os
 import sys
+import numpy as np
 sys.path.insert(0,'python')
 from gdal_merge import main as gdal_merge
+
 
 def rm(x):
     for f in x:
