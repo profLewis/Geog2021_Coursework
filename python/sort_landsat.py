@@ -14,7 +14,23 @@ def rm(x):
             pass
 
 # pull out only the reflectance bands
-def sort_landsat(files):
+def sort_landsat(files,ul="767385 2533665",lr="827985 2493765"):
+  '''
+  Options:
+  
+    ul : define UTM coords (in m) of upper left of extraction box
+         e.g. ul="767385 2533665"
+    lr : define UTM coords (in m) of lower right of extraction box
+         e.g. ul="827985 2493765"       
+         
+  so, e.g.:
+  
+  result = sort_landsat(files,ul="767385 2533665",lr="827985 2493765")
+  
+  
+  '''
+  ul = np.array(ul.split()).astype(int)
+  lr = np.array(lr.split()).astype(int)
   ofiles = []
   for d in files:
     bfiles = []
@@ -35,7 +51,11 @@ def sort_landsat(files):
         rm(ofiles)
         
         # build a command line to run
-        box = "-ul_lr 767385 2533665 827985 2493765"
+        try:
+            box = "-ul_lr %d %d %d %d"%(ul[0],ul[1],lr[0],lr[1])
+        except:
+            print "you messed up the ul and lr inputs- returning to defaults"
+            box = "-ul_lr 767385 2533665 827985 2493765"
         nbfiles = []
         
         # loop over the band files
