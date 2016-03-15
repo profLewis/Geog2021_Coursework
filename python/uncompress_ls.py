@@ -14,7 +14,7 @@ import ogr, os, osr
 import numpy as np
 
 
-def uncompress_ls(dirname,temp_dir=None):
+def uncompress_ls(dirname,temp_dir='temp'):
   filelist = []
   if temp_dir:
     if not os.path.exists(temp_dir):
