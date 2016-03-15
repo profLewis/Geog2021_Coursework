@@ -16,7 +16,7 @@ def rm(x):
             pass
 
 # pull out only the reflectance bands
-def sort_landsat(files,ul="767385 2533665",lr="827985 2493765"):
+def sort_landsat(files,ul="767385 2533665",lr="827985 2493765",maskgood=True):
   '''
   Options:
   
@@ -84,8 +84,12 @@ def sort_landsat(files,ul="767385 2533665",lr="827985 2493765"):
              mfile + ' -separate -ot Float32 -v ' + box 
         gdal_merge(cmd.split())
         # mask create
-        cmd = "python/gdal_calc.py -A " + ofile1 + \
+        if maskgood:
+            cmd = "python/gdal_calc.py -A " + ofile1 + \
               ' --outfile=' + ofile3 + ' --calc="~((A == 1) + (A == 0))"'
+        else:
+            cmd = "python/gdal_calc.py -A " + ofile1 + \
+              ' --outfile=' + ofile3 + ' --calc="((A == 1) + (A == 0))"'
         os.system(cmd)
         # tidy up
         rm([ofile,ofile1])
